@@ -18,4 +18,5 @@ public class User extends BaseModel {
     @ManyToMany
     private List<Group> groups;
     private UserType userType;
+    private int balance;
 }
