@@ -13,6 +13,10 @@ public class CommandExecutor {
         this.commands = new ArrayList<>(commands);
         this.commands.add(new UserSignUpCommand());
         this.commands.add(new UserLoginCommand());
+        this.commands.add(new SettleUpGroupCommand());
+        this.commands.add(new SettleUpUserCommand());
+        this.commands.add(new SettleUpUserForGroupCommand());
+        this.commands.add(new AddExpenseCommand());
     }
 
     public void add(Command command) {
